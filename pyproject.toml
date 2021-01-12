@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pypi-module-jenkinsfile"
+version = "0.1.0"
+description = "An example of publishing a poetry pypi module via Jenkins"
+authors = ["Stephen Badger <stephen.badger@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+pycodestyle = "^2.6.0"
+
+[build-system]
+requires = ["poetry >= 1.0"]
+build-backend = "poetry.masonry.api"

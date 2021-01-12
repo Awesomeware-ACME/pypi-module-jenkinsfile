@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: poetry
+  labels:
+    name: poetry
+spec:
+  containers:
+  - name: poetry
+    image: awesomeware/python-poetry:3.9-1.1.4
+    tty: true
+    command:
+      - cat
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
