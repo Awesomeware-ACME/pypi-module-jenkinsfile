@@ -8,8 +8,10 @@ pipeline {
 
     stages {
         stage('Build Poetry Module') {
-            container('poetry') {
-                sh 'poetry install && poetry build'
+            steps {
+                container('poetry') {
+                    sh 'poetry install && poetry build'
+                }
             }
         }
     }
